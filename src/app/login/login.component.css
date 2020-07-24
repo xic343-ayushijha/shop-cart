@@ -1,0 +1,50 @@
+.error {
+    color:red;
+    /* display: none; */
+}
+input[type="text"]{
+  margin-top: 150px;
+}
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 15px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+input[type="submit"]{
+    width: 50%;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+input[type="submit"]:hover {background-color: #3e8e41}
+
+input[type="submit"]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+form {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}

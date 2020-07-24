@@ -1,0 +1,30 @@
+<header>
+    <img class="product-logo" src="../assets/logo.png">
+    <app-search (searchItem)="searchByName($event)"></app-search>
+    <div class="cart-wrapper">
+        <span class="username"><i class="fa fa-user" aria-hidden="true"></i>Welcome <b>{{currentUser}}</b> </span>
+    <app-add-cart [itemScore]="count"></app-add-cart>
+</div>
+</header>
+<div class="product-main-wrapper">
+<app-filter [filterArr]="itemStore" (shuffledList)='oldListHide($event)'></app-filter>
+    <div class="product-list-wrapper">
+        <div class="product-list" *ngFor="let item of productList">
+            <div class="img-wrapper">
+                <img class="product-img" [src]="item.image"/>
+                <span class="rebate" *ngIf="item.discount">{{item.discount}}%</span>
+            </div>
+            <div class="product-details">
+                <h2 class="product-title">{{item.title}}
+                </h2>
+                <span class="product-color" [style.backgroundColor]="item.colour.color"></span>
+                <p class="brand-name">{{item.brand}}</p>
+ 
+                    <i class="fa fa-plus-circle" (click)="addToCart(item)"></i><span class="add-cart">Add</span>
+  
+                <p class="product-price">{{item.price.final_price}}$</p>
+
+            </div>
+        </div>
+    </div>
+</div>

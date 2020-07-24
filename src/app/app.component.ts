@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shop-cart';
+  checkLogin(){
+    var loginToken = localStorage.getItem('token');
+    if(loginToken){
+      window.location.href = "/products";
+    }
+    else {
+      window.location.href = "/login";
+    }
+  }
+  logoutUser(){
+    localStorage.clear();
+  }
 }

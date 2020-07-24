@@ -1,0 +1,27 @@
+nav a{
+    display: inline-block;
+    width: 112px;
+    border: 1px solid #ccc;
+    background-color: lightgray;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    /* border-radius: 5px; */
+    padding: 3px 0px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+nav a:hover {
+    background-color: #ed9017;
+}
+body{
+    margin: 0;
+}
+nav {
+    position: absolute;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+}

@@ -1,0 +1,86 @@
+<div class="filter-wrapper"><span class="reset-filter">
+    <p class="filter-heading">Filters</p>
+    <span class="reset" (click)="clearFilter()"><i class="fa fa-refresh fa-spin fa-x"></i>Reset
+      filter</span>
+  </span>
+  <ul class="color-filter">
+    <p>Color</p>
+    <li *ngFor="let elt of filterArr">
+      <label>{{elt.colour.title}}
+        <input type="checkbox" (change)="filterColor(elt,$event)" />
+      </label>
+    </li>
+  </ul>
+  <ul class="brand-filter">
+    <p>Brand</p>
+    <li *ngFor="let elt of filterArr">
+      <label>{{elt.brand}}
+        <input type="checkbox" (change)="filterBrand(elt,$event)" />
+      </label>
+    </li>
+  </ul>
+  <div class="price-wrapper">
+    <p>Price</p>
+    <div class="price-container">
+      <select class="price-min" [(ngModel)]="priceMin" (change)="filterByPrice()">
+        <option value="Min" class="min-val">Min</option>
+        <option value="100" class="min-val">₹100</option>
+        <option value="200" class="min-val">₹200</option>
+        <option value="300" class="min-val">₹300</option>
+        <option value="400" class="min-val">₹400</option>
+        <option value="500" class="min-val">₹500</option>
+        <option value="700" class="min-val">₹700</option>
+        <option value="1000" class="min-val">₹1000</option>
+        <option value="1500" class="min-val">₹1500</option>
+        <option value="2000" class="min-val">₹2000</option>
+        <option value="3000" class="min-val">₹3000</option>
+        <option value="4000" class="min-val">₹4000</option>
+      </select></div>
+    <div class="price-till">to</div>
+    <div class="price-container"><select class="price-max" [(ngModel)]="priceMax" (change)="filterByPrice()">
+        <option value="Max" class="max-val">Max</option>
+        <option value="100" class="max-val">₹100</option>
+        <option value="200" class="max-val">₹200</option>
+        <option value="300" class="max-val">₹300</option>
+        <option value="400" class="max-val">₹400</option>
+        <option value="500" class="max-val">₹500</option>
+        <option value="700" class="max-val">₹700</option>
+        <option value="1000" class="max-val">₹1000</option>
+        <option value="1500" class="max-val">₹1500</option>
+        <option value="2000" class="max-val">₹2000</option>
+        <option value="3000" class="max-val">₹3000</option>
+        <option value="4000" class="max-val">₹4000</option>
+        <option value="Max" class="max-val">₹4000+</option>
+      </select></div>
+  </div>
+  <div class="discount-wrapper">
+    <p>Discount</p>
+    <div class="discount-container">
+      <select class="discount-min" [(ngModel)]="discountMin" (change)="filterByDiscount()">
+        <option value="Min" class="min-dis">Min</option>
+        <option value="10" class="min-dis">10%</option>
+        <option value="20" class="min-dis">20%</option>
+        <option value="30" class="min-dis">30%</option>
+        <option value="40" class="min-dis">40%</option>
+        <option value="50" class="min-dis">50%</option>
+        <option value="60" class="max-dis">60%</option>
+        <option value="70" class="min-dis">70%</option>
+        <option value="80" class="min-dis">80%</option>
+        <option value="90" class="min-dis">90%</option>
+      </select></div>
+    <div class="discount-till">to</div>
+    <div class="discount-container"><select class="discount-max" [(ngModel)]="discountMax"
+        (change)="filterByDiscount()">
+        <option value="Max" class="max-dis">Max</option>
+        <option value="10" class="max-dis">10%</option>
+        <option value="20" class="max-dis">20%</option>
+        <option value="30" class="max-dis">30%</option>
+        <option value="40" class="max-dis">40%</option>
+        <option value="50" class="max-dis">50%</option>
+        <option value="60" class="max-dis">60%</option>
+        <option value="70" class="max-dis">70%</option>
+        <option value="80" class="max-dis">80%</option>
+        <option value="90" class="max-dis">90%</option>
+      </select></div>
+  </div>
+</div>

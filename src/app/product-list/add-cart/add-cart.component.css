@@ -1,0 +1,15 @@
+.cart-wrap {
+    display: block;
+    cursor: pointer;
+}
+.cart-wrap i {
+    font-size: 26px;
+    padding-right: 10px;
+    margin-left: -4px;
+}
+.cart-wrap i:hover {
+    filter: invert(80%);
+}
+.cart-count{
+    font-weight: 700;
+}

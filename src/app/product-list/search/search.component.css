@@ -1,0 +1,21 @@
+.search-bar {
+    font-size: 14px;
+    height: 20px;
+    line-height: 24px;
+    width: 95%;
+    color: #696e79;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 8px 10px 10px;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #f5f5f6;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    background: #f5f5f6;
+    text-align: center;
+}
+.search-bar:focus{
+    box-shadow: 0 0 0 2px #696e79, 0 0 0 3px rgba(255,153,0,.5);
+    /* outline:2px solid #f90; */
+}

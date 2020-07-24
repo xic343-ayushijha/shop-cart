@@ -1,0 +1,161 @@
+header {
+  height: 100px;
+  width: 100%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  background: -webkit-linear-gradient(top, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+  background: -webkit-linear-gradient(top, #f6e6b4 0%, #ed9017 100%);
+}
+
+app-search {
+  flex-basis: 80%;
+}
+
+.cart-wrapper {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-logo {
+  height: 80px;
+  display: inline-block;
+  width: 70px;
+}
+
+.username {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.fa-user {
+  font-size: 20px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.fa-user:hover {
+  filter: invert(80%);
+}
+
+.product-main-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+.product-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 78%;
+}
+app-filter {
+  flex-basis: 24%;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.product-list {
+  height: auto;
+  width: 320px;
+  margin: 10px;
+}
+
+.img-wrapper {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  height: 300px;
+  width: 320px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper:hover {
+  box-shadow: 5px 5px 10px #eee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.fa-plus-circle:hover {
+  font-size: 26px;
+  color: coral;
+}
+.add-cart:hover {
+  font-weight: 700;
+  color: coral;
+}
+
+.rebate {
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 5px;
+  position: absolute;
+  top: 11px;
+  right: 12px;
+}
+
+.product-img {
+  max-height: 280px;
+}
+
+.product-color {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.product-title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  flex-basis: 82%;
+  color: #282c3f;
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.brand-name {
+  color: #535766;
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+  flex-basis: 80%;
+}
+
+.fa-plus-circle {
+  cursor: pointer;
+  font-size: 22px;
+  padding-right: 2px;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 900;
+  font-family: cursive;
+  flex-basis: 90%;
+}

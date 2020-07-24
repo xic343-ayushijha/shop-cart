@@ -1,0 +1,7 @@
+<form class="login-form">
+  <input type="text" name="username" placeholder="Username" [(ngModel)]="userName" required>
+  <span class="error" *ngIf="userError">Enter a valid username</span>
+  <input type="password" name="password" placeholder="Password" [(ngModel)]="password" required>
+  <p class="error" *ngIf="pwdError">Enter correct password</p>
+  <input type="submit" value="Login" (click)="loginUser()">
+</form>
